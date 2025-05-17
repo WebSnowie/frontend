@@ -12,7 +12,7 @@ export default function LoginScreen() {
         const response = await login(email, password);
         console.log(response);
         if (response.success) {
-            router.push('/'); 
+            router.push('/main/home'); 
         } else {
             console.error(response.error);
         }
